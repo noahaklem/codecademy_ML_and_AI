@@ -30,6 +30,12 @@ def load_list_data(lst, csv_file, column_name):
         return lst
     
 load_list_data(ages, "insurance.csv", 'age')
-print(ages)
+# print(ages)
 load_list_data(sexes, "insurance.csv", 'sex')
-print(sexes)
+# print(sexes) 
+# tests successful continue to load other csv information
+load_list_data(bmis, "insurance.csv", 'bmi')
+load_list_data(num_children, "insurance.csv", 'children')
+load_list_data(smoker_statuses, "insurance.csv", 'smoker')
+load_list_data(regions, "insurance.csv", 'region')
+load_list_data(insurance_charges, "insurance.csv", 'charges')
