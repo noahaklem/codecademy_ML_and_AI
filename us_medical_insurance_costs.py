@@ -20,3 +20,16 @@ smoker_statuses = []
 regions = []
 insurance_charges = []
 
+# import data from csv with helper function
+
+def load_list_data(lst, csv_file, column_name):
+    with open(csv_file) as csv_info:
+        csv_dict = csv.DictReader(csv_info)
+        for row in csv_dict:
+            lst.append(row[column_name])
+        return lst
+    
+load_list_data(ages, "insurance.csv", 'age')
+print(ages)
+load_list_data(sexes, "insurance.csv", 'sex')
+print(sexes)
