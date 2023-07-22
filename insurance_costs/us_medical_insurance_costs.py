@@ -39,3 +39,14 @@ load_list_data(num_children, "insurance.csv", 'children')
 load_list_data(smoker_statuses, "insurance.csv", 'smoker')
 load_list_data(regions, "insurance.csv", 'region')
 load_list_data(insurance_charges, "insurance.csv", 'charges')
+
+#analysis can begin
+
+def average_age(list):
+    age_counter = 0
+    
+    for age in list:
+        age_counter += int(age)
+    print(f"Average age is {round(age_counter/len(ages), 2)} years")
+
+average_age(ages)
